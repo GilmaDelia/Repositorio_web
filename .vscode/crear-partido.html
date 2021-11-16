@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Nuevo partido</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-img">
+    <header class="main-menu">
+        <nav>
+            <i class="fas fa-home menu-icons"> <a href="index.html" class="label-style black menu-links">Inicio</a></i>
+            <i class="fas fa-futbol menu-icons"> <a href="index.html" class="label-style black menu-links">Ver
+                    partidos</a></i>
+            <i class="fas fa-plus-square menu-icons section-selected"> <a href="index.html"
+                    class="label-style black menu-links section-selected">
+                    Crear partido</a></i>
+            <i class="fas fa-user"> <a href="index.html" class="label-style black menu-links">Cerrar sesión</a></i>
+        </nav>
+    </header>
+
+    <main class="main-bg">
+        <div class="back-container">
+            <h1 class="label-style black align-center pd-top-2">Nuevo partido</h1>
+        </div>
+        <div class="back-container">
+            <div class="container-info">
+                <form id="form-new-match">
+                    <div class="form-section">
+                        <h4 class="label-style black">Fecha:</h4>
+                        <input class="input-form" type="date" name="fecha" value="required" class="input-form label-style white">
+                    </div>
+                    <div class="form-section">
+                        <h4 class="label-style black">Equipo local:</h4>
+                        <select name="equipo1" class="input-form label-style white">
+                            <option selected>Selecciona una opción</option>
+                            <option value="r">Equipo 1</option>
+                            <option value="a">Equipo 2</option>
+                            <option value="v">Equipo 3</option>
+                        </select>
+                    </div>
+                    <div class="form-section">
+                        <h4 class="label-style black">Equipo visitante:</h4>
+                        <select name="equipo2" class="input-form label-style white">
+                            <option selected>Selecciona una opción</option>
+                            <option value="r">Equipo 1</option>
+                            <option value="a">Equipo 2</option>
+                            <option value="v">Equipo 3</option>
+                        </select>
+                    </div>
+                    <button class="button-style" type="">Crear partido</button>
+                </form>
+            </div>
+            <div id="new-match-img"></div>
+        </div>
+    </main>
+    <footer class="footer-style">
+        <h4 class="label-style white mg-top-5">Copyright © - Todos los derechos reservados (2021)</h4>
+    </footer>
+</body>
+
+</html>
